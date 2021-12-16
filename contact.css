@@ -60,3 +60,61 @@
   margin-bottom: 20px;
   font-size: 15px;
 }
+
+.form-control.success input {
+  border-color: #4cb944;
+}
+
+.form-control.error input {
+  border: 2px solid #bb0a21;
+}
+
+.form-control i {
+  visibility: hidden;
+  position: absolute;
+  top: 45px;
+  right: 15px;
+}
+
+.form-control.success i.fa-check-circle {
+  visibility: visible;
+  color: #4cb944;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  visibility: visible;
+  color: #bb0a21;
+}
+
+.form-control .small {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 14px;
+}
+
+.form-control.error .small {
+  visibility: visible;
+  color: #bb0a21;
+}
+
+.submit {
+  display: block;
+  width: 100%;
+  border: none;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #9b9b9b;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.success-message {
+  display: none;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+}
