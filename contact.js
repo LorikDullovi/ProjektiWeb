@@ -29,3 +29,33 @@ function checkInput() {
       counter++;
    }
 
+   if (counter == 4) {
+      successMsg.style.display = "block";
+      successMsg.style.color = "#4cb944";
+      successMsg.innerHTML = "Message Sent Successfully!";
+   } else {
+      successMsg.style.display = "block";
+      successMsg.style.color = "#bb0a21";
+      successMsg.innerHTML = "Opss! Something went wrong!";
+   }
+}
+
+function errorMessageFor(input, message) {
+   const formControl = input.parentElement;
+   const small = formControl.querySelector(".small");
+
+   small.innerHTML = message;
+
+   formControl.className = "form-control error";
+}
+
+function successMessageFor(input) {
+   const formControl = input.parentElement;
+   formControl.className = "form-control success";
+}
+
+function isEmail(email) {
+   return /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/.test(
+      email
+   );
+}
