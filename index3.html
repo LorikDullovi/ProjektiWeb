@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAGE TITLE</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header id="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__logo">
+            <a href="index.html">
+              <img src="img/logo.png" alt="logo" id="logo-header" />
+            </a>
+          </div>
+
+          <!-- NAVIGATION -->
+          <nav id="header__menu">
+            <ul class="nav__links">
+              <li class="nav__link active"><a href="index.html">HOME</a></li>
+              <li class="nav__link"><a href="aboutUs.html">ABOUT US</a></li>
+              <li class="nav__link"><a href="#">SERVICES</a></li>
+              <li class="nav__link"><a href="#">PRODUCTS</a></li>
+              <li class="nav__link"><a href="countactUs.html">CONTACT US</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="slider">
+          <div class="slider">
+            <img src="img/slider-img1.jpg" alt=" slider photo" class="slider__img" />
+            <img src="img/slider-img2.jpg" alt=" slider photo" class="slider__img" />
+            <img src="img/slider-img3.jpg" alt=" slider photo" class="slider__img" />
+            <img src="img/slider-img4.jpg" alt=" slider photo" class="slider__img" />
+            <img src="img/slider-img5.jpg" alt=" slider photo" class="slider__img" />
+            <img src="img/slider-img6.jpg" alt=" slider photo" class="slider__img" />
+          </div>
+  
+          <span class="prev" onclick="plusSlides(-1)">
+            <i class="fas fa-caret-left fa-2x"></i>
+          </span>
+          <span class="next" onclick="plusSlides(1)">
+            <i class="fas fa-caret-right fa-2x"></i>
+          </span>
+      </section>
+
+      <section id="section__a">
+        <div class="container">
+          <div class="boxe">
+            <div class="box">
+              <img src="img/services.png" alt="service" />
+            </div>
+            <div class="box main__box">
+              <div class="box__content">
+                <img src="img/chart.png" alt="chart" />
+                <div class="box__content__wrapper">
+                  <h4>This website template has been</h4>
+                  <h2>designed by freewebsitestemplates.com</h2>
+                  <br />
+                  <p>
+                    template, your're free to use this website for you, for
+                    free. You can replace all this text with your own text. You
+                    can remove any link to our website from this website
+                    template without linking back to us
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <img src="img/about.png" alt="about" />
+            </div>
+          </div>
+        </div>
+      </section>
